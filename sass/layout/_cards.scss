@@ -1,4 +1,4 @@
-.project {
+.project-box__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -7,25 +7,25 @@
     color: #212121;
 }
 
-.project-type {
+.project-box__type {
     font-size: 16px;
     line-height: 1.88;
     color: #757575;
 }
 
-.portfolio-list {
+.portfolio {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.cards-overlay-container {
+.portfolio-gallery {
     position: relative;
     overflow: hidden;
 }
 
 
-.overlay-portfolio {
+.portfolio-gallery__desc {
     position: absolute;
     top: 0;
     left: 0;
@@ -43,13 +43,13 @@
     color: #FFFFFF;
     padding: 63px 24px;
 
-    .portfolio-link:hover &,
-    .portfolio-link:focus & {
+    .portfolio__link:hover &,
+    .portfolio__link:focus & {
         transform: translate(0, 0);
     }
 }
 
-.cards {
+.portfolio-gallery__cards {
     flex-basis: calc((100% - 60px)/3);
     display: block;
 }
@@ -62,7 +62,7 @@
     border-bottom: 1px solid #EEEEEE;
 }
 
-.portfolio-link {
+.portfolio__link {
     display: block;
 
     transition: box-shadow var(--transition-dur-and-fun);

@@ -33,10 +33,6 @@
     padding-bottom: 24px;
 }
 
-.btn-item:not(:last-child) {
-    margin-right: 8px;
-}
-
 .menu__item:not(:last-child) {
     margin-right: 50px;
 }
@@ -61,7 +57,7 @@
     }
 }
 
-.current {
+.menu__link_current {
     color: var(--accent-color);
 
     .menu__item & {
@@ -82,12 +78,12 @@
     }
 }
 
-.menu__link.current:hover:after {
+.menu__link.menu__link_current:hover:after {
     background-color: var(--accent-color);
 }
 
-.contact-email,
-.contact-phone-number {
+.menu__email,
+.menu__phone-number {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -100,7 +96,7 @@
 }
 
 
-.contact-phone-number {
+.menu__phone-number {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -114,7 +110,7 @@
     }
 }
 
-.contact-email {
+.menu__email {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -129,7 +125,7 @@
 }
 
 
-.contact-email__icon {
+.menu__contact-icon {
     margin-right: 10px;
     fill: currentColor;
     order: -1;
